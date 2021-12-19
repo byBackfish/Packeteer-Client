@@ -1,0 +1,32 @@
+{
+	"name": "dungeonizer3",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"_moduleAliases": {
+		"@rng/lib": "dist/lib",
+		"@rng/src": "dist/",
+		"@rng/extensions": "dist/lib/extensions",
+		"@rng/config": "dist/config/",
+		"@rng/util": "dist/util",
+		"@rng/client": "dist/lib/Client.js"
+	},
+	"scripts": {
+		"build": "yarn raw",
+		"dev": "yarn build && node dist/Bot.js",
+		"dist": "rmdir dist /s /q",
+		"start": "nodemon -e ts,ejs,css --watch . --exec \"yarn dev\"",
+		"raw": "node ./scripts/build.js",
+		"update": "npx prisma introspect && npx prisma generate"
+	},
+	"dependencies": {
+		"@skyra/timestamp": "^1.0.0",
+		"@types/node": "^16.6.1",
+		"@types/ws": "^8.2.0",
+		"esbuild": "^0.12.20",
+		"glob": "^7.1.7",
+		"node-color-log": "^5.3.1",
+		"typescript": "^4.3.5",
+		"ws": "^8.2.2"
+	}
+}

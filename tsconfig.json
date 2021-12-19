@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "CommonJS",
+		"strict": false,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"outDir": "dist/",
+		"baseUrl": ".",
+		"paths": {
+			"@rng/lib/*": [
+				"src/lib/*"
+			],
+			"@rng/extensions/*": [
+				"src/lib/extension/*"
+			],
+			"@rng/src/*": [
+				"src/*"
+			],
+			"@rng/config/*": [
+				"src/config/*"
+			],
+			"@rng/util/*": [
+				"src/util/*"
+			],
+			"@rng/client": [
+				"src/lib/Client.ts"
+			]
+		}
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
