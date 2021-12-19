@@ -1,7 +1,7 @@
 # Packeteer-Client
 A simple Packeteer Client
 
-* Requires (Packeteer-Server)[https://github.com/byBackfish/Packeteer-Server]
+* Requires [Packeteer-Server](https://github.com/byBackfish/Packeteer-Server)
 
 # Installation
 
